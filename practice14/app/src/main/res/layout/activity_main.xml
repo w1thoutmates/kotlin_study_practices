@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84C0F2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/leftTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Слева сверху"
+        android:background="@drawable/rounded_red_shape"
+        android:padding="7pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/centerTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/underlined_text"
+        android:background="@drawable/blue_rectangle"
+        android:textStyle="bold"
+        android:textColor="#f000"
+        android:padding="7pt"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rightTop"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/yellow_rectangle"
+        android:padding="2dp"
+        android:layout_marginTop="40dp"
+        android:gravity="bottom"
+        android:text="Справа сверху"
+        android:textColor="#f000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leftCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Слева в центре"
+        android:background="@drawable/green_rounded_shape"
+        android:padding="7pt"
+        android:textSize="10sp"
+        android:layout_marginBottom="45dp"
+        android:textStyle="bold"
+        android:textColor="#f000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leftBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Слева снизу"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rounded_red_filled_shape"
+        android:padding="7pt"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/centerBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Снизу в центре"
+        android:textColor="@color/white"
+        android:background="@drawable/blue_filled_rectangle"
+        android:padding="7pt"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/rightBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Справа снизу"
+        android:background="@drawable/green_filled_rounded_shape"
+        android:padding="7pt"
+        android:textColor="#f000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Справа в центре"
+        android:background="@drawable/yellow_filled_rectangle"
+        android:padding="7pt"
+        android:textStyle="italic|bold"
+        android:textSize="30sp"
+        android:layout_marginTop="45dp"
+        android:textColor="#f000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
