@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Примеры layout'ов: "
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:backgroundTint="#FF1100"
+            android:id="@+id/btn_absolute"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="AbsoluteLayout"/>
+
+        <Button
+            android:backgroundTint="#FF9800"
+            android:id="@+id/btn_frame"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="FrameLayout"/>
+
+        <Button
+            android:backgroundTint="#FFEB3B"
+            android:id="@+id/btn_linear"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="LinearLayout"/>
+
+        <Button
+            android:backgroundTint="#4CAF50"
+            android:id="@+id/btn_relative"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="RelativeLayout"/>
+
+        <Button
+            android:backgroundTint="#0083FF"
+            android:id="@+id/btn_table"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="TableLayout"/>
+
+        <Button
+            android:backgroundTint="#3F51B5"
+            android:id="@+id/btn_constraint"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="ConstraintLayout"/>
+
+        <Button
+            android:backgroundTint="#C058D3"
+            android:id="@+id/btn_mixed"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Mixed Layouts"/>
+
+        <Button
+            android:backgroundTint="#929292"
+            android:layout_width="match_parent"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="100dp"
+            android:textAllCaps="true"
+            android:text="кнопка"/>
+
+        <Button
+            android:backgroundTint="#929292"
+            android:layout_width="match_parent"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="100dp"
+            android:textAllCaps="true"
+            android:text="кнопка"/>
+
+        <Button
+            android:backgroundTint="#929292"
+            android:layout_width="match_parent"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="100dp"
+            android:textAllCaps="true"
+            android:text="кнопка"/>
+
+        <Button
+            android:backgroundTint="#929292"
+            android:layout_width="match_parent"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="100dp"
+            android:textAllCaps="true"
+            android:text="кнопка"/>
+
+        <Button
+            android:backgroundTint="#929292"
+            android:layout_width="match_parent"
+            android:textColor="#f000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="100dp"
+            android:textAllCaps="true"
+            android:text="кнопка"/>
+
+
+    </LinearLayout>
+</ScrollView>

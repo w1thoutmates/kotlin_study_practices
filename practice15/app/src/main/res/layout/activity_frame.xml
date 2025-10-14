@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".FrameActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text text text"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="20dp"
+        android:textSize="60sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text text text"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50dp"
+        android:textSize="60sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text text text"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:textSize="60sp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#FF1100" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="#FF9800" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#FFEB3B" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0083FF" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#3F51B5" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Кнопка"
+        android:textSize="20sp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#C058D3" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Назад"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:backgroundTint="#536DFF"
+        />
+
+
+</FrameLayout>

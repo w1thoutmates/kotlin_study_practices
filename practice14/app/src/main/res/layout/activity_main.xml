@@ -15,6 +15,7 @@
         android:text="Слева сверху"
         android:background="@drawable/rounded_red_shape"
         android:padding="7pt"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,12 +66,13 @@
         android:id="@+id/leftBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_red_filled_shape"
+        android:fontFamily="@font/inter"
+        android:padding="7pt"
         android:text="Слева снизу"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/rounded_red_filled_shape"
-        android:padding="7pt"
-        android:layout_marginBottom="40dp"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
