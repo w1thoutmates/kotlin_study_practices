@@ -5,36 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:stretchColumns="*"
     tools:context=".TableActivity">
 
     <TableRow>
         <TextView
-            android:text="A1"
-            android:background="#FF0000"/>
+            android:text="___A1___"
+            android:background="#FF0000"
+            android:textSize="20sp"/>
         <TextView
-            android:text="B1\n(горизонтально)"
+            android:text="___B1___"
             android:layout_span="2"
+            android:textSize="20sp"
             android:background="#00FF00"/>
     </TableRow>
 
     <TableRow>
         <TextView
             android:id="@+id/cell_a2"
-            android:text="A2\n(вертикально)"
+            android:textSize="20sp"
+            android:text="___A2___"
             android:background="#0000FF"/>
         <TextView
             android:text="___B2___"
+            android:textSize="20sp"
             android:background="#FFFF00"/>
         <TextView
             android:text="___C2___"
+            android:textSize="20sp"
             android:background="#FF00FF"/>
     </TableRow>
 
     <TableRow>
         <TextView
-            android:text="B3-C3 (горизонтально)"
-            android:layout_span="2"
-            android:background="#00FFFF"/>
+            android:textSize="20sp"
+            android:text="___A3-C3___"
+            android:layout_span="3"
+            android:background="#00FFFF"
+            />
     </TableRow>
 
     <Button
