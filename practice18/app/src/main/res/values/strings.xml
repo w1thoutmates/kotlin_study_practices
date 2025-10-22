@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">practice18</string>
+    <string name="hello">Привет</string>
+    <string name="goodbye">Пока</string>
+    <string name="back">Назад</string>
+    <string name="toSecondActivity">Второй</string>
+    <string name="toThirdActivity">Третий</string>
+</resources>

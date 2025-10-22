@@ -53,6 +53,12 @@ class MainActivity : AppCompatActivity() {
                 linearLayout.addView(tv)
             }
 
+            val newTextView = TextView(this).apply{
+                text = "New text"
+                textSize = 20f
+            }
+            linearLayout.addView(newTextView)
+
             val buttonsLayout = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
             }
