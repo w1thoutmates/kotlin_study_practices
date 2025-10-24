@@ -104,14 +104,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/urlIntent" />
 
-    <ImageView
-        android:id="@+id/takedPicture"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/finishCurAct"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Закрыть текущее актитвти"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cameraIntent"
-        android:src="@mipmap/ic_launcher_round"/>
+        app:layout_constraintTop_toBottomOf="@id/cameraIntent" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/takedPicture"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cameraIntent"-->
+<!--        android:src="@mipmap/ic_launcher_round"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

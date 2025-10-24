@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.media.Image
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -25,6 +26,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var photo: ImageView
     val resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result: ActivityResult ->
@@ -34,6 +36,15 @@ class MainActivity : AppCompatActivity() {
               findViewById<TextView>(R.id.returnedTextFromSecond).text = returnedData
           }
     }
+
+//    val cameraLauncher = registerForActivityResult(
+//        ActivityResultContracts.StartActivityForResult()
+//    ) { result ->
+//        if(result.resultCode == RESULT_OK){
+//            val bitmap = result.data?.extras?.get("data") as Bitmap?
+//            findViewById<ImageView>(R.id.takedPicture).setImageBitmap(bitmap)
+//        }
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,7 +95,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.cameraIntent).setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            //cameraLauncher.launch(intent)
             startActivity(intent)
         }
+
+        findViewById<Button>(R.id.finishCurAct).setOnClickListener { finish() }
     }
 }
