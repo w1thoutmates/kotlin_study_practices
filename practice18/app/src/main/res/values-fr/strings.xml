@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">practice18</string>
+    <string name="hello">Bonjour</string>
+    <string name="goodbye">Au revoir</string>
+    <string name="back">Dos</string>
+    <string name="toSecondActivity">Deuxième</string>
+    <string name="toThirdActivity">Troisième</string>
+    <string name="home">Maison</string>
+</resources>

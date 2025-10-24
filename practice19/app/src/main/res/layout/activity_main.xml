@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первое активити"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toSecondAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти на второе"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#0080FF"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerTv" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите текст для передачи во второе активити"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toSecondAct" />
+
+    <Button
+        android:id="@+id/confirmEt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить текст"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#019230"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et1" />
+
+    <TextView
+        android:id="@+id/savedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тут будет текст который вы хотите передать"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmEt1" />
+
+    <TextView
+        android:id="@+id/returnedTextFromSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тут будет текст который вы получите из второго активити"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/savedText" />
+
+    <Button
+        android:id="@+id/urlIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти по ссылке"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#EC00FF"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/returnedTextFromSecond" />
+
+    <Button
+        android:id="@+id/cameraIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти к камере"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#FF9500"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/urlIntent" />
+
+    <ImageView
+        android:id="@+id/takedPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cameraIntent"
+        android:src="@mipmap/ic_launcher_round"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

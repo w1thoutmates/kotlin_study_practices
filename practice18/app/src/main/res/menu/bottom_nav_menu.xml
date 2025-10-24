@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_home" android:title="Home" />
-    <item android:id="@+id/nav_activity2" android:title="Act2" />
-    <item android:id="@+id/nav_activity3" android:title="Act3" />
+    <item android:id="@+id/nav_home" android:title="@string/home" />
+    <item android:id="@+id/nav_activity2" android:title="@string/toSecondActivity" />
+    <item android:id="@+id/nav_activity3" android:title="@string/toThirdActivity" />
 </menu>

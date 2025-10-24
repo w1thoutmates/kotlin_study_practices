@@ -6,4 +6,5 @@
     <string name="back">Back</string>
     <string name="toSecondActivity">Second</string>
     <string name="toThirdActivity">Third</string>
+    <string name="home">Home</string>
 </resources>
