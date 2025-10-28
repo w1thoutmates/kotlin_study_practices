@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enterUrlField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ссылку по которой хотите перейти"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitUrlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти"
+        android:textAllCaps="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterUrlField"
+        />
+
+    <Button
+        android:id="@+id/openYoutubeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#ff00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submitUrlBtn"
+        android:text="Открыть YouTube" />
+
+
+
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF9200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickPhotoForBackgroundBtn"
+        android:text="Позвонить" />
+
+    <Button
+        android:id="@+id/pickPhotoForBackgroundBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#AF774C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openYoutubeBtn"
+        android:text="Выбрать фото для фона" />
+
+    <Button
+        android:id="@+id/someBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#AB123D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/callBtn"
+        android:text="Кнопка с выбором" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
