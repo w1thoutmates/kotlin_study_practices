@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="true">practice18</string>
+    <string name="hello">Konichiva</string>
+    <string name="goodbye">Poka po-yaponsky</string>
+    <string name="back">Nazad po-yaponsky</string>
+    <string name="toSecondActivity">Second po-yaponsky</string>
+    <string name="toThirdActivity">Third po-yaponsky</string>
+    <string name="home">Arigato</string>
+</resources>
