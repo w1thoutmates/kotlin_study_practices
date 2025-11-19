@@ -27,7 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberAsyncImagePainter
-import com.example.practice26.api.CardViewModel
+import com.example.practice26.api.*
 import com.example.practice26.ui.theme.Practice26Theme
 
 

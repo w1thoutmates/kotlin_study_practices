@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
             - Алло! Мама пошла в магазин, скоро будет!
             - Алё! Это кто? Папа спит, не будите!
             - Да, слушаю! А меня зовут Артём!
-            - Аллоо, мама на кухне варит борщ, не может подойти!
+            - Алло, мама на кухне варит борщ, не может подойти!
             - Здравствуйте! Это я, Катя! Взрослых нет дома!
             - Аллооо! Говорите, я передам!
             - Да, это мы! А вы кто?
@@ -69,7 +69,7 @@ fun MyPreview() {
         - Алло! Мама пошла в магазин, скоро будет!
         - Алё! Это кто? Папа спит, не будите!
         - Да, слушаю! А меня зовут Артём!
-        - Аллоо, мама на кухне варит борщ, не может подойти!
+        - Алло, мама на кухне варит борщ, не может подойти!
         - Здравствуйте! Это я, Катя! Взрослых нет дома!
         - Аллооо! Говорите, я передам!
         - Да, это мы! А вы кто?
@@ -102,7 +102,7 @@ fun RegexFun(text: String){
                 .filter { Regex("""\p{L}*вар\p{L}*""", RegexOption.IGNORE_CASE).matches(it) }
                 .sorted()
 
-            appendLine("Слова с корнем «вар»: $varWords")
+            appendLine("Слова с корнем \"вар\": $varWords")
 
             val readWords = text
                 .split(Regex("""\P{L}+"""))
@@ -110,7 +110,7 @@ fun RegexFun(text: String){
                 .filter { Regex("""\p{L}*чит\p{L}*""", RegexOption.IGNORE_CASE).matches(it) }
                 .sorted()
 
-            appendLine("Слова с корнем «чит»: $readWords")
+            appendLine("Слова с корнем \"чит\": $readWords")
 
             val countOfWords = text
                 .split(Regex("""\P{L}+"""))
@@ -151,6 +151,9 @@ fun RegexFun(text: String){
             val answers = answerRegex.findAll(text).map{it.value}.toList()
 
             appendLine("Ответы ребенка: $answers")
+            
+            val regular = text.contains(Regex("папа", RegexOption.IGNORE_CASE))
+            appendLine(regular)
         }
 
         Text(
